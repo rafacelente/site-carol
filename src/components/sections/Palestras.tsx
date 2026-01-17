@@ -4,7 +4,7 @@ import SectionTitle from '../ui/SectionTitle';
 
 const Palestras: React.FC = () => {
   return (
-    <Section id="palestras" className="bg-secondary-50">
+    <Section id="palestras" className="bg-secondary-300">
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
         <div>
           <img
@@ -13,23 +13,20 @@ const Palestras: React.FC = () => {
             className="rounded-lg shadow-xl w-full h-auto object-cover aspect-[4/3]"
           />
         </div>
-
         <div>
           <SectionTitle
-            title="Palestras"
+            title="Encontros e Conversas"
             centered={false}
           />
-          <div className="prose prose-lg max-w-none text-gray-700">
-            <p className="mt-4">
-              Compartilho minha experiência clínica e paixão pela Psicanálise em palestras voltadas a diferentes públicos.
-              Com linguagem acessível, abordo temas sobre saúde mental, relações e desenvolvimento pessoal.
+          <div className="prose prose-lg max-w-none text-primary-800 font-sans-serif">
+            <p className="mt-4 text-primary-800 font-sans-serif">
+            Compartilho minha experiência clínica em espaços destinados a diferentes públicos e instituições.
             </p>
-            <p className="mt-6">
-              Cada palestra é construída de forma personalizada, respeitando as necessidades do grupo ou instituição,
-              promovendo reflexão e diálogo sobre os desafios contemporâneos do viver.
+            <p className="mt-2 text-primary-800 font-sans-serif">
+            Com uma linguagem acessível, abordo temas relacionados à saúde mental, às relações e ao cuidado com a vida psíquica.
             </p>
-            <p className="mt-8">
-              Entre em contato para saber mais sobre como levar uma conversa inspiradora e transformadora para o seu evento.
+            <p className="mt-2 text-primary-800 font-sans-serif">
+            São encontros que promovem reflexão e diálogo, onde diferentes temas podem ser trabalhados conforme o contexto.
             </p>
           </div>
         </div>

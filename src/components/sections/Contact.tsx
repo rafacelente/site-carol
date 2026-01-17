@@ -35,15 +35,15 @@ const Contact: React.FC = () => {
   const [currentOffice, setCurrentOffice] = useState(0);
 
   return (
-    <Section id="contato" className="bg-primary-50">
+    <Section id="contato" className="bg-secondary-300">
       <SectionTitle 
         title="Contato" 
         subtitle="Entre em contato para agendar uma consulta ou tirar dúvidas sobre o atendimento."
       />
       
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-        <div className="bg-white p-8 rounded-lg shadow-md">
-          <h3 className="text-2xl font-bold mb-6 text-gray-800">Localização</h3>
+        <div className="bg-secondary-50 p-8 rounded-lg shadow-md">
+          <h3 className="text-2xl font-bold mb-6 text-primary-900 font-serif">Localização</h3>
           
           {/* Office selector */}
           <div className="flex space-x-2 mb-6">
@@ -53,8 +53,8 @@ const Contact: React.FC = () => {
                 onClick={() => setCurrentOffice(idx)}
                 className={`px-4 py-2 text-sm font-semibold rounded-full border transition-colors ${
                   currentOffice === idx
-                    ? 'bg-primary-600 text-white border-primary-600'
-                    : 'bg-white text-primary-600'
+                    ? 'bg-primary-700 text-white border-primary-700'
+                    : 'bg-secondary-100 text-primary-700 border-secondary-300'
                 }`}
               >
                 {office.name}
@@ -66,8 +66,8 @@ const Contact: React.FC = () => {
             <div className="flex items-start mb-4">
               <MapPin className="text-primary-600 mr-3 mt-1 flex-shrink-0" size={22} />
               <div>
-                <h4 className="font-bold text-gray-800 mb-1">Endereço do Consultório</h4>
-                <address className="text-gray-600 not-italic">
+                <h4 className="font-bold text-primary-900 mb-1">Endereço do Consultório</h4>
+                <address className="text-primary-600 not-italic">
                   {offices[currentOffice].address}
                 </address>
               </div>
@@ -76,16 +76,16 @@ const Contact: React.FC = () => {
             <div className="flex items-start mb-4">
               <Calendar className="text-primary-600 mr-3 mt-1 flex-shrink-0" size={22} />
               <div>
-                <h4 className="font-bold text-gray-800 mb-1">Dias de Atendimento</h4>
-                <p className="text-gray-600">Segunda a sexta-feira</p>
+                <h4 className="font-bold text-primary-900 mb-1">Dias de Atendimento</h4>
+                <p className="text-primary-600">Segunda a sexta-feira</p>
               </div>
             </div>
             
             <div className="flex items-start">
               <Clock className="text-primary-600 mr-3 mt-1 flex-shrink-0" size={22} />
               <div>
-                <h4 className="font-bold text-gray-800 mb-1">Horário de Funcionamento</h4>
-                <p className="text-gray-600">Das 7h às 22h</p>
+                <h4 className="font-bold text-primary-900 mb-1">Horário de Funcionamento</h4>
+                <p className="text-primary-600">Das 7h às 22h</p>
               </div>
             </div>
           </div>
@@ -104,13 +104,13 @@ const Contact: React.FC = () => {
           </div>
         </div>
         
-        <div className="bg-white p-8 rounded-lg shadow-md">
-          <h3 className="text-2xl font-bold mb-6 text-gray-800">Agende sua Consulta</h3>
+        <div className="bg-secondary-50 p-8 rounded-lg shadow-md">
+          <h3 className="text-2xl font-bold mb-6 text-primary-900 font-serif">Agende sua Consulta</h3>
           
           <div className="space-y-6">
             <div>
-              <h4 className="font-bold text-gray-800 mb-3">Atendimento Presencial</h4>
-              <p className="text-gray-600 mb-4">
+              <h4 className="font-bold text-primary-900 mb-3">Atendimento Presencial</h4>
+              <p className="text-primary-600 mb-4">
                 Consultas realizadas no consultório localizado no Higenópolis em São Paulo ou no Aquarius em São José dos Campos, em ambiente acolhedor e privativo.
               </p>
               <a 
@@ -122,9 +122,9 @@ const Contact: React.FC = () => {
               </a>
             </div>
             
-            <div className="border-t border-gray-200 pt-6">
-              <h4 className="font-bold text-gray-800 mb-3">Atendimento Online</h4>
-              <p className="text-gray-600 mb-4">
+            <div className="border-t border-secondary-300 pt-6">
+              <h4 className="font-bold text-primary-900 mb-3">Atendimento Online</h4>
+              <p className="text-primary-600 mb-4">
                 Sessões realizadas por videochamada, oferecendo a mesma qualidade do atendimento presencial, com a conveniência de estar em casa.
               </p>
               <a 
@@ -140,7 +140,7 @@ const Contact: React.FC = () => {
       </div>
 
       {/* Gallery of Office Locations */}
-      <div className="mt-16">
+      {/* <div className="mt-16">
         <h3 className="text-2xl font-bold mb-8 text-gray-800 text-center">Conheça os consultórios</h3>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           <div>
@@ -164,7 +164,7 @@ const Contact: React.FC = () => {
             </p>
           </div>
         </div>
-      </div>
+      </div> */}
     </Section>
   );
 };

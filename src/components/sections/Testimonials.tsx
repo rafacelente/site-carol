@@ -23,7 +23,7 @@ const Testimonials: React.FC = () => {
   };
 
   return (
-    <Section id="depoimentos" className="bg-gradient-to-b from-white to-secondary-50">
+    <Section id="depoimentos" className="bg-secondary-50">
       <SectionTitle 
         title="Depoimentos" 
         subtitle="Confira o que meus clientes dizem sobre o processo terapêutico e os resultados alcançados."
@@ -40,16 +40,16 @@ const Testimonials: React.FC = () => {
                 key={index} 
                 className="w-full flex-shrink-0 px-4"
               >
-                <div className="bg-white p-8 md:p-10 rounded-lg shadow-md border border-gray-100 relative">
-                  <svg className="h-12 w-12 text-primary-200 absolute top-6 left-6 opacity-20" fill="currentColor" viewBox="0 0 32 32">
+                <div className="bg-secondary-100 p-8 md:p-10 rounded-lg shadow-md border border-secondary-200 relative">
+                  <svg className="h-12 w-12 text-primary-400 absolute top-6 left-6 opacity-30" fill="currentColor" viewBox="0 0 32 32">
                     <path d="M9.352 4C4.456 7.456 1 13.12 1 19.36c0 5.088 3.072 8.064 6.624 8.064 3.36 0 5.856-2.688 5.856-5.856 0-3.168-2.208-5.472-5.088-5.472-.576 0-1.344.096-1.536.192.48-3.264 3.552-7.104 6.624-9.024L9.352 4zm16.512 0c-4.8 3.456-8.256 9.12-8.256 15.36 0 5.088 3.072 8.064 6.624 8.064 3.264 0 5.856-2.688 5.856-5.856 0-3.168-2.304-5.472-5.184-5.472-.576 0-1.248.096-1.44.192.48-3.264 3.456-7.104 6.528-9.024L25.864 4z" />
                   </svg>
                   <div className="relative z-10">
-                    <p className="text-gray-700 mb-6 text-lg italic">"{testimonial.content}"</p>
+                    <p className="text-primary-700 mb-6 text-lg italic">"{testimonial.content}"</p>
                     <div>
-                      <p className="font-bold text-gray-800">{testimonial.author}</p>
+                      <p className="font-bold text-primary-900">{testimonial.author}</p>
                       {testimonial.role && (
-                        <p className="text-gray-500 text-sm">{testimonial.role}</p>
+                        <p className="text-primary-500 text-sm">{testimonial.role}</p>
                       )}
                     </div>
                   </div>
@@ -62,14 +62,14 @@ const Testimonials: React.FC = () => {
         {/* Navigation Arrows */}
         <button
           onClick={goToPrev}
-          className="absolute top-1/2 left-0 md:-left-12 transform -translate-y-1/2 bg-white/50 hover:bg-white p-2 rounded-full shadow-md transition-colors focus:outline-none focus:ring-2 focus:ring-primary-500 z-20"
+          className="absolute top-1/2 left-0 md:-left-12 transform -translate-y-1/2 bg-secondary-100/80 hover:bg-secondary-100 p-2 rounded-full shadow-md transition-colors focus:outline-none focus:ring-2 focus:ring-primary-500 z-20"
           aria-label="Depoimento anterior"
         >
           <ChevronLeftIcon className="h-6 w-6 text-primary-700" />
         </button>
         <button
           onClick={goToNext}
-          className="absolute top-1/2 right-0 md:-right-12 transform -translate-y-1/2 bg-white/50 hover:bg-white p-2 rounded-full shadow-md transition-colors focus:outline-none focus:ring-2 focus:ring-primary-500 z-20"
+          className="absolute top-1/2 right-0 md:-right-12 transform -translate-y-1/2 bg-secondary-100/80 hover:bg-secondary-100 p-2 rounded-full shadow-md transition-colors focus:outline-none focus:ring-2 focus:ring-primary-500 z-20"
           aria-label="Próximo depoimento"
         >
           <ChevronRightIcon className="h-6 w-6 text-primary-700" />
@@ -81,7 +81,7 @@ const Testimonials: React.FC = () => {
             <button
               key={index}
               className={`h-3 w-3 rounded-full transition-colors ${
-                activeIndex === index ? 'bg-primary-600' : 'bg-gray-300'
+                activeIndex === index ? 'bg-primary-700' : 'bg-secondary-400'
               }`}
               onClick={() => setActiveIndex(index)}
               aria-label={`Ver depoimento ${index + 1}`}

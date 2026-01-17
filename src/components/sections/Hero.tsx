@@ -10,15 +10,13 @@ const Hero: React.FC = () => {
           alt="Ambiente terapêutico acolhedor" 
           className="w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-primary-900/80 to-primary-900/40"></div>
+        <div className="absolute inset-0 bg-gradient-to-r from-primary-800/80 to-primary-900/60"></div>
       </div>
       
       <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-2xl text-white">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 font-serif">
-          Tem coisas que só aparecem quando a gente se escuta de verdade.          </h1>
-          <p className="text-xl md:text-2xl mb-8 text-primary-100">
-          A terapia não é sobre ter todas as respostas - é sobre criar um espaço onde elas possam, enfim, surgir.          </p>
+          Um espaço para compreender o que atravessa você.          </h1>
           <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
             <a 
               href="https://wa.me/5511977765788?text=Olá,%20gostaria%20de%20agendar%20uma%20consulta"
@@ -26,15 +24,17 @@ const Hero: React.FC = () => {
               rel="noopener noreferrer"
             >
               <Button variant="primary" size="lg" className="w-full sm:w-auto" showWhatsApp>
-                Agendar Consulta
+                Agendar Sessão
               </Button>
             </a>
             <a href="#sobre">
               <Button variant="outline" size="lg" className="w-full sm:w-auto bg-white/10 border-white text-white hover:bg-white/20">
-                Saiba Mais
+                Conhecer meu trabalho
               </Button>
             </a>
           </div>
+          <p className="text-medium md:text-base mb-8 text-secondary-100 font-serif">
+          Primeira sessão <span className="font-bold">sem custo</span>          </p>
         </div>
       </div>
       

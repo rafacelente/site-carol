@@ -21,18 +21,20 @@ const About: React.FC = () => {
           />
 
           
-          <div className="prose prose-lg max-w-none text-gray-700">
+          <div className="prose prose-lg max-w-none text-primary-800 font-sans-serif">
 
             <p className="mt-4">
-              Sou Caroline Venas, Psicóloga Clínica. Com mais de 4 anos de experiência e orientação psicanalítica, dedico-me a acompanhar sua jornada de autoconhecimento.
+            Sou Caroline Venas, Psicóloga Clínica com orientação psicanalítica. 
+            Há mais de 4 anos acompanho pessoas que buscam compreender com mais profundidade o que as atravessa, sejam dores, repetições, escolhas, silêncios e movimentos que precisam ser olhados com calma.
             </p>
 
             <p className="mt-6">
-              Valorizo a escuta atenta da sua história e a potência transformadora da palavra. Em um ambiente seguro e acolhedor, podemos juntos explorar as raízes de seus desafios, elaborar questões internas e construir um viver mais autêntico e com significado.
+            Minha prática se apoia em uma escuta sensível, capaz de perceber tanto o que é dito quanto o que aparece nas entrelinhas.
+Acredito no tempo da palavra e no espaço onde cada pessoa pode se ouvir e, pouco a pouco, transformar aquilo que limita, machuca  confunde e se repete.
             </p>
 
             <p className="mt-8">
-              Se você busca um processo terapêutico que valorize sua voz e promova um crescimento genuíno, convido você a conhecer meu trabalho.
+            Um encontro cuidadoso onde a sua história ganha espaço para ser dita e elaborada a partir da sua experiência.
             </p>
           </div>
         </div>

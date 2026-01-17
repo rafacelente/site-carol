@@ -12,7 +12,7 @@ const FAQ: React.FC = () => {
   };
 
   return (
-    <Section id="faq">
+    <Section id="faq" className="bg-secondary-50">
       <SectionTitle 
         title="Perguntas Frequentes" 
         subtitle="Encontre respostas para as dúvidas mais comuns sobre o processo terapêutico."
@@ -22,18 +22,18 @@ const FAQ: React.FC = () => {
         {faqs.map((faq, index) => (
           <div 
             key={index}
-            className="mb-4 border border-gray-200 rounded-lg overflow-hidden"
+            className="mb-4 border border-secondary-300 rounded-lg overflow-hidden"
           >
             <button
-              className="w-full flex justify-between items-center p-5 text-left bg-white hover:bg-gray-50 transition-colors"
+              className="w-full flex justify-between items-center p-5 text-left bg-secondary-100 hover:bg-secondary-200 transition-colors"
               onClick={() => toggleFAQ(index)}
               aria-expanded={activeIndex === index}
             >
-              <span className="font-medium text-gray-800">{faq.question}</span>
+              <span className="font-medium text-primary-900">{faq.question}</span>
               {activeIndex === index ? (
                 <ChevronUp className="text-primary-600 flex-shrink-0" size={20} />
               ) : (
-                <ChevronDown className="text-gray-400 flex-shrink-0" size={20} />
+                <ChevronDown className="text-primary-500 flex-shrink-0" size={20} />
               )}
             </button>
             
@@ -42,8 +42,8 @@ const FAQ: React.FC = () => {
                 activeIndex === index ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
               }`}
             >
-              <div className="p-5 bg-gray-50 border-t border-gray-200">
-                <p className="text-gray-600">{faq.answer}</p>
+              <div className="p-5 bg-secondary-200 border-t border-secondary-300">
+                <p className="text-primary-700">{faq.answer}</p>
               </div>
             </div>
           </div>
@@ -51,7 +51,7 @@ const FAQ: React.FC = () => {
       </div>
       
       <div className="mt-12 text-center">
-        <p className="text-gray-600">
+        <p className="text-primary-600">
           Não encontrou o que procurava? Entre em contato diretamente para outras dúvidas.
         </p>
         <a 

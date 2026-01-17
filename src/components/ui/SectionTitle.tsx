@@ -15,11 +15,11 @@ const SectionTitle: React.FC<SectionTitleProps> = ({
 }) => {
   return (
     <div className={`mb-12 ${centered ? 'text-center' : ''} ${className}`}>
-      <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
+      <h2 className="text-3xl md:text-4xl font-bold text-primary-900 mb-4 font-serif">
         {title}
       </h2>
       {subtitle && (
-        <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+        <p className="text-lg text-primary-700 max-w-2xl mx-auto font-sans-serif">
           {subtitle}
         </p>
       )}
