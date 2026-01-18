@@ -35,7 +35,7 @@ const Contact: React.FC = () => {
   const [currentOffice, setCurrentOffice] = useState(0);
 
   return (
-    <Section id="contato" className="bg-secondary-300">
+    <Section id="contato" className="bg-secondary-50">
       <SectionTitle 
         title="Contato" 
         subtitle="Entre em contato para agendar uma consulta ou tirar dúvidas sobre o atendimento."

@@ -8,7 +8,7 @@ const About: React.FC = () => {
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
         <div>
           <img 
-            src="About.jpeg" 
+            src="About (1).jpeg" 
             alt="Caroline Venas - Psicóloga" 
             className="rounded-lg shadow-xl w-full h-auto object-cover aspect-[4/3]"
           />
@@ -25,7 +25,7 @@ const About: React.FC = () => {
 
             <p className="mt-4">
             Sou Caroline Venas, Psicóloga Clínica com orientação psicanalítica. 
-            Há mais de 4 anos acompanho pessoas que buscam compreender com mais profundidade o que as atravessa, sejam dores, repetições, escolhas, silêncios e movimentos que precisam ser olhados com calma.
+            Há mais de 4 anos acompanho pessoas que buscam compreender com mais profundidade o que as atravessa, sejam dores, ansiedade, luto, depressão e crises que precisam ser olhadas com calma.
             </p>
 
             <p className="mt-6">

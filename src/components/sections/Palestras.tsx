@@ -4,7 +4,7 @@ import SectionTitle from '../ui/SectionTitle';
 
 const Palestras: React.FC = () => {
   return (
-    <Section id="palestras" className="bg-secondary-300">
+    <Section id="palestras" className="bg-secondary-50">
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
         <div>
           <img

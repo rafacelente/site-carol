@@ -30,7 +30,7 @@ export default {
         },
       },
       fontFamily: {
-        sans: ['Nunito Sans', 'sans-serif'],
+        sans: ['Garet', 'sans-serif'],
         serif: ['"Cormorant Garamond"', 'serif'],
       },
     

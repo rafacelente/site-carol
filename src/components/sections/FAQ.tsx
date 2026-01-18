@@ -12,7 +12,7 @@ const FAQ: React.FC = () => {
   };
 
   return (
-    <Section id="faq" className="bg-secondary-50">
+    <Section id="faq" className="bg-secondary-200">
       <SectionTitle 
         title="Perguntas Frequentes" 
         subtitle="Encontre respostas para as dúvidas mais comuns sobre o processo terapêutico."
@@ -25,7 +25,7 @@ const FAQ: React.FC = () => {
             className="mb-4 border border-secondary-300 rounded-lg overflow-hidden"
           >
             <button
-              className="w-full flex justify-between items-center p-5 text-left bg-secondary-100 hover:bg-secondary-200 transition-colors"
+              className="w-full flex justify-between items-center p-5 text-left bg-secondary-100 hover:bg-secondary-50 transition-colors"
               onClick={() => toggleFAQ(index)}
               aria-expanded={activeIndex === index}
             >

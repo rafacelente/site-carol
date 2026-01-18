@@ -33,17 +33,17 @@ export const navItems: NavItem[] = [
 
 export const testimonials: TestimonialType[] = [
   {
-    content: 'A terapia com Caroline transformou minha vida. Sua abordagem acolhedora e profissional me ajudou a superar momentos difíceis com mais clareza.',
+    content: 'A Carol é o amor da minha vida. Sério. Fazer terapia com ela mudou completamente a forma como eu me enxergo e me relaciono com as pessoas. Ela tem um jeito muito humano, muito verdadeiro, que te leva pra lugares profundos sem você se sentir julgada ou invadida. Me sinto extremamente acolhida em todas as sessões. É um espaço seguro de verdade.',
     author: 'Mariana S.',
     role: 'Paciente há 2 anos',
   },
   {
-    content: 'Caroline tem uma capacidade única de criar um ambiente seguro onde me sinto à vontade para compartilhar meus pensamentos mais profundos.',
+    content: 'Comecei a terapia sem saber muito o que esperar e hoje não consigo imaginar minha vida sem esse espaço. A Carol tem uma escuta muito atenta e uma sensibilidade grande. Ela sabe ir fundo, tocar em pontos difíceis, mas sempre com cuidado. Dá pra sentir que ela realmente se importa, não é nada automático ou mecânico.',
     author: 'Rafael C.',
     role: 'Paciente há 1 ano',
   },
   {
-    content: 'Depois de algumas sessões com Caroline, comecei a notar mudanças significativas na forma como lido com meus relacionamentos e desafios diários. Recomendo muito.',
+    content: 'As sessões com a Carol são um respiro na minha semana. Ela tem uma escuta muito verdadeira e um jeito de acolher que faz você se sentir à vontade até pra falar o que nunca conseguiu falar antes. Ao mesmo tempo, ela te provoca, te leva pra lugares profundos, mas sempre com muito respeito. É uma profissional incrível.',
     author: 'Juliana T.',
     role: 'Paciente há 6 meses',
   },

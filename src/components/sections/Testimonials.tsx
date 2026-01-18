@@ -23,7 +23,7 @@ const Testimonials: React.FC = () => {
   };
 
   return (
-    <Section id="depoimentos" className="bg-secondary-50">
+    <Section id="depoimentos" className="bg-secondary-200">
       <SectionTitle 
         title="Depoimentos" 
         subtitle="Confira o que meus clientes dizem sobre o processo terapêutico e os resultados alcançados."
