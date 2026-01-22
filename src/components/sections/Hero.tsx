@@ -33,8 +33,6 @@ const Hero: React.FC = () => {
               </Button>
             </a>
           </div>
-          <p className="text-medium md:text-base mb-8 text-secondary-100 font-serif">
-          Primeira sessão <span className="font-bold">sem custo</span>          </p>
         </div>
       </div>
       

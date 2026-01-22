@@ -9,7 +9,7 @@ const Footer: React.FC = () => {
           <div>
             <h3 className="text-xl font-bold mb-4 font-serif">Caroline Venas</h3>
             <p className="text-secondary-200 mb-4">
-              Psicóloga clínica com abordagem psicanalítica, dedicada a proporcionar um espaço seguro e acolhedor para crescimento e autoconhecimento.
+              Psicóloga clínica com abordagem psicanalítica, dedicada a oferecer um espaço seguro e acolhedor para escuta, elaboração e autoconhecimento.
             </p>
             <p className="text-secondary-200 text-sm">
               CRP: 06/183666

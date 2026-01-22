@@ -15,7 +15,7 @@ const Palestras: React.FC = () => {
         </div>
         <div>
           <SectionTitle
-            title="Encontros e Conversas"
+            title="Encontros e Palestras"
             centered={false}
           />
           <div className="prose prose-lg max-w-none text-primary-800 font-sans-serif">
