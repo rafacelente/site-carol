@@ -3,6 +3,7 @@ import { ChevronUp, ChevronDown } from 'lucide-react';
 import Section from '../ui/Section';
 import SectionTitle from '../ui/SectionTitle';
 import { faqs } from '../../data';
+import { whatsappLink, trackWhatsAppClick } from '../../lib/whatsapp';
 
 const FAQ: React.FC = () => {
   const [activeIndex, setActiveIndex] = useState<number | null>(null);
@@ -55,9 +56,10 @@ const FAQ: React.FC = () => {
           Não encontrou o que procurava? Entre em contato diretamente para outras dúvidas.
         </p>
         <a 
-          href="https://wa.me/5511999999999?text=Olá,%20tenho%20uma%20dúvida%20sobre%20o%20atendimento"
+          href={whatsappLink('Olá, tenho uma dúvida sobre o atendimento')}
           target="_blank"
           rel="noopener noreferrer"
+          onClick={() => trackWhatsAppClick('faq')}
           className="inline-flex items-center mt-4 text-primary-600 hover:text-primary-700 font-medium"
         >
           <span>Enviar mensagem</span>

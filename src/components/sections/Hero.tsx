@@ -1,5 +1,6 @@
 import React from 'react';
 import Button from '../ui/Button';
+import { whatsappLink, trackWhatsAppClick } from '../../lib/whatsapp';
 
 const Hero: React.FC = () => {
   return (
@@ -19,9 +20,10 @@ const Hero: React.FC = () => {
           Um espaço para compreender o que atravessa você.          </h1>
           <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
             <a 
-              href="https://wa.me/5511977765788?text=Olá,%20gostaria%20de%20agendar%20uma%20consulta"
+              href={whatsappLink('Olá, gostaria de agendar uma consulta')}
               target="_blank"
               rel="noopener noreferrer"
+              onClick={() => trackWhatsAppClick('hero')}
             >
               <Button variant="primary" size="lg" className="w-full sm:w-auto" showWhatsApp>
                 Agendar Sessão

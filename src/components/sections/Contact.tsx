@@ -3,6 +3,7 @@ import { MapPin, Calendar, Clock } from 'lucide-react';
 import Section from '../ui/Section';
 import SectionTitle from '../ui/SectionTitle';
 import Button from '../ui/Button';
+import { whatsappLink, trackWhatsAppClick } from '../../lib/whatsapp';
 
 const Contact: React.FC = () => {
   const offices = [
@@ -114,9 +115,10 @@ const Contact: React.FC = () => {
                 Consultas realizadas no consultório localizado no Higenópolis em São Paulo ou no Aquarius em São José dos Campos, em ambiente acolhedor e privativo.
               </p>
               <a 
-                href="https://wa.me/5511977765788?text=Olá,%20gostaria%20de%20agendar%20uma%20consulta%20presencial"
+                href={whatsappLink('Olá, gostaria de agendar uma consulta presencial')}
                 target="_blank"
                 rel="noopener noreferrer"
+                onClick={() => trackWhatsAppClick('contact_presencial')}
               >
                 <Button variant="primary" className="w-full" showWhatsApp>Agendar Presencial</Button>
               </a>
@@ -128,9 +130,10 @@ const Contact: React.FC = () => {
                 Sessões realizadas por videochamada, oferecendo a mesma qualidade do atendimento presencial, com a conveniência de estar em casa.
               </p>
               <a 
-                href="https://wa.me/5511977765788?text=Olá,%20gostaria%20de%20agendar%20uma%20consulta%20online"
+                href={whatsappLink('Olá, gostaria de agendar uma consulta online')}
                 target="_blank"
                 rel="noopener noreferrer"
+                onClick={() => trackWhatsAppClick('contact_online')}
               >
                 <Button variant="primary" className="w-full" showWhatsApp>Agendar Online</Button>
               </a>

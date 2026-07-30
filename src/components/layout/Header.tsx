@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
 import { navItems } from '../../data';
+import { whatsappLink, trackWhatsAppClick } from '../../lib/whatsapp';
 import Button from '../ui/Button';
 
 const Header: React.FC = () => {
@@ -38,10 +39,11 @@ const Header: React.FC = () => {
               {item.title}
             </a>
           ))}
-          <a 
-            href="https://wa.me/5511977765788?text=Olá,%20gostaria%20de%20agendar%20uma%20consulta"
+          <a
+            href={whatsappLink('Olá, gostaria de agendar uma consulta')}
             target="_blank"
             rel="noopener noreferrer"
+            onClick={() => trackWhatsAppClick('header_desktop')}
           >
             <Button variant="primary">Agendar Consulta</Button>
           </a>
@@ -71,11 +73,12 @@ const Header: React.FC = () => {
                 {item.title}
               </a>
             ))}
-            <a 
-              href="https://wa.me/5511999999999?text=Olá,%20gostaria%20de%20agendar%20uma%20consulta"
+            <a
+              href={whatsappLink('Olá, gostaria de agendar uma consulta')}
               target="_blank"
               rel="noopener noreferrer"
               className="py-2"
+              onClick={() => trackWhatsAppClick('header_mobile')}
             >
               <Button variant="primary" className="w-full">Agendar Consulta</Button>
             </a>
